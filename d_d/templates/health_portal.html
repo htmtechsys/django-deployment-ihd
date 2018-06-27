@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+<nav class="navbar navbar-default navbar-static-top" style="margin-top:20px;">
+ <div class="container-fluid">
+   <div class="container">
+<center><font color="blue"><h3 class="section-title h1"><b>HEALTH PORTALS</b></h3></font></center>
+   <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+ </nav>
+
+<div class="container">
+  <div class="row" style="margin-top:30px;">
+    <div class="col-md-3">
+      <a href="{% url 'keyperformance' %}">
+        <div class="card" id="subcard">
+          <div>
+             <p class="colorboxesheading">
+               <span>HMIS</span>
+              </p>
+             <hr>
+             <center><img class=" img-fluid" src="{% static "image1/hims.jpg" %}" alt="card image" height="100px" width="100px"></center>
+          </div>
+      </div>
+     </a>
+    </div>
+    <div class="col-md-3">
+   <a href="{% url 'financial' %}">
+      <div class="card1" id="subcard">
+        <div>
+           <p class="colorboxesheading">
+             <span>RCH</span>
+           </p>
+           <hr>
+           <center><img class=" img-fluid" src="{% static "image1/r.png" %}" alt="card image" height="100px" width="100px"></center>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-3">
+    <a href="">
+      <div class="card2" id="subcard">
+        <div>
+           <p class="colorboxesheading">
+             <span>NIN</span>
+           </p>
+           <hr>
+           <center><img class=" img-fluid" src="{% static "image1/nhp.png" %}" alt="card image" height="100px" width="100px"></center>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-3">
+   <a href="">
+      <div class="card3" id="subcard">
+        <div>
+           <p class="colorboxesheading">
+             <span>SNCU</span>
+           </p>
+           <hr>
+            <center><img class=" img-fluid" src="{% static "image1/s.jpg" %}" alt="card image" height="100px" width="100px"></center>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px;">
+    <div class="col-md-3" id="subcard">
+    <a href="{% url 'department' %}">
+      <div class="card4">
+        <div>
+           <p class="colorboxesheading">
+             <span>e-AUSHADHI</span>
+           </p>
+           <hr>
+            <center><img class="img-fluid" src="{% static "image1/aush1.png" %}" alt="card image" height="100px" width="100px"></center>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-3">
+     <a href="{% url 'portfolio' %}">
+      <div class="card5" id="subcard">
+          <div>
+             <p class="colorboxesheading">
+               <span>NCD</span>
+             </p>
+             <hr>
+              <center><img class=" img-fluid" src="{% static "image1/ncd.png" %}" alt="card image" height="100px" width="100px"></center>
+          </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-3">
+    <a href="{% url 'program' %}">
+      <div class="card6" id="subcard">
+        <div>
+           <p class="colorboxesheading">
+             <span>ASHA SOFT</span>
+           </p>
+           <hr>
+            <center><img class=" img-fluid" src="{% static "image1/asha.png" %}" alt="card image" height="100px" width="100px"></center>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-3">
+    <a href="{% url 'district' %}">
+      <div class="card7" id="subcard">
+        <div>
+           <p class="colorboxesheading">
+             <span>PSMSA</span>
+           </p>
+           <hr>
+            <center><img class=" img-fluid" src="{% static "image1/psmsa.jpg" %}" alt="card image" height="100px" width="100px"></center>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
